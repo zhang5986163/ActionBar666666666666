@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <item
+        android:id="@+id/image_actionbar"
+        android:icon="@drawable/ren"
+        android:title="发布"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/action_settings_tianqi"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="天气"/>
+    <item
+        android:id="@+id/action_settings_lixian"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="离线"/>
+    <item
+        android:id="@+id/action_settings_yejian"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="夜间"/>
+    <item
+        android:id="@+id/action_settings_sousuo"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="搜索"/>
+    <item
+        android:id="@+id/action_settings_saoyisao"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="扫一扫"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="设置"/>
+</menu>

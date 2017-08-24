@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "zhangxuelei1506d.wangyi"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions{
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    signingConfigs {
+        debug {
+            storeFile file('debug.keystore')
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.android.support:support-v4:23.1.1'
+    compile files('libs/umeng_social_tool.jar')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'com.google.code.gson:gson:2.8.1'
+    compile 'org.xutils:xutils:3.5.0'
+    compile 'com.youth.banner:banner:1.4.9'
+    compile 'com.facebook.fresco:fresco:0.12.0'
+    compile 'com.android.support:support-v4:25.3.1'
+    testCompile 'junit:junit:4.12'
+    compile 'cn.yipianfengye.android:zxing-library:2.2'
+    compile files('libs/ShareSDK-Core-3.0.1.jar')
+    compile files('libs/Msc.jar')
+    compile 'org.jsoup:jsoup:1.9.2'
+    compile files('libs/uk-co-senab-photoview (1).jar')
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+}

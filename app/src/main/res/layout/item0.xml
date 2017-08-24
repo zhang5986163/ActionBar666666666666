@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/title_title0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="阿斯兰看到就爱上了快到家啦开始加大了思考就对了看撒谎的蓝色咖啡就爱了；速度快进来" />
+
+        <TextView
+            android:id="@+id/data_data0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今天" />
+
+
+
+</LinearLayout>
